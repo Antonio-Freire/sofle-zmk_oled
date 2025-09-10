@@ -85,11 +85,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans     &trans    &trans    &trans     &trans  &bootloader
-&sys_reset   &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &kp HOME                        &kp PG_UP  &trans    &kp UP    &trans     &kp N0  &kp DELETE
-&trans       &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp END                         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &tog 0  &kp BSPC
-&bootloader  &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans     &trans    &trans    &trans     &trans  &sys_reset
-                           &trans        &trans        &trans        &tog 0        &trans    &trans  &trans     &trans    &trans    &trans
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &bootloader
+&sys_reset      &kp INS       &kp PSCRN     &kp K_CMENU   &trans        &kp HOME                        &kp PG_UP      &trans         &kp UP         &trans         &kp N0         &kp DELETE
+&bt BT_CLR_ALL  &kp LALT      &kp LCTRL     &kp LSHFT     &trans        &kp END                         &kp PG_DN      &kp LEFT       &kp DOWN       &kp RIGHT      &tog 0         &kp BSPC
+&bootloader     &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans         &bt BT_NXT     &bt BT_PRV     &trans         &bt BT_CLR     &sys_reset
+                              &trans        &trans        &trans        &tog 0        &trans    &trans  &trans         &trans         &trans         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
